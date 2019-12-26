@@ -4,6 +4,7 @@ public class Employee {
     public static final String MANAGER_JOB = "Manager";
     public static final String DEVELOPER = "Developer";
     public static final String TESTER = "Tester";
+    public static final String TRAINER = "Trainer";
 
     private Long id;
     private String firstName;

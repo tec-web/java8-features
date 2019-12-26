@@ -24,7 +24,9 @@ public class FilteringWithPredicates {
                 new Employee(3L, "Hermione", "Granger", 2500.45f, Employee.DEVELOPER);
         Employee developerTwo =
                 new Employee(4L, "Harry", "Potter", 2500.45f, Employee.DEVELOPER);
-        fp.addEmployees(manager, tester, developerOne, developerTwo);
+        Employee trainer =
+                new Employee(5L, "Severous", "Snape", 2700.45f, Employee.TRAINER);
+        fp.addEmployees(manager, tester, developerOne, developerTwo, trainer);
 
         Predicate<Employee> devPredicate = e -> Employee.DEVELOPER.equals(e.getJobTitle());
         List<Employee> filteredEmployees = fp.filter(fp.employees, devPredicate);
